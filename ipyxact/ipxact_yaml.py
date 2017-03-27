@@ -68,9 +68,9 @@ enumeratedValues:
     - enumeratedValue
 reset:
   MEMBERS:
-    value: str
+    value: IpxactInt
 resets:
-  CHILDREN:
+  CHILD:
     - reset
 field:
   MEMBERS:
@@ -83,7 +83,7 @@ field:
     testable: str
     volatile: IpxactBool
     access: str
-  CHILDREN:
+  CHILD:
     - resets
   CHILDREN:
     - enumeratedValues
